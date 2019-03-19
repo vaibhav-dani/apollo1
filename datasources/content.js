@@ -1,4 +1,3 @@
-
 const { RESTDataSource } = require('apollo-datasource-rest');
 
 class ContentAPI extends RESTDataSource {
@@ -18,16 +17,15 @@ async getAllArticles() {
 async getArticleById({ articleId }) {
   this.baseURL = this.baseURL+'/article/'+articleId;
   const response = await this.get('/');
-    console.log(response.headers);
-  
-    return this.articleReducer(response.data);
+  return this.articleReducer(response.data);
 }
 
 articleReducer(article) {
- return {
+    
+return {
     id: article.id,
     title: article.attributes.title,
-    body: article.attributes.body
+    body: article.attributes.body.processed    
   };
 }
     
