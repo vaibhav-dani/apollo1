@@ -8,6 +8,8 @@ const DamAPI = require('./datasources/dam');
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
+  playground: true,
     dataSources: () => ({
     contentAPI: new ContentAPI(),
     damAPI: new DamAPI()
