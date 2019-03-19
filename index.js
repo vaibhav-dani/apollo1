@@ -1,7 +1,7 @@
 const { ApolloServer, gql } = require('apollo-server');
 
 const books = [
-  { id: 1, title: 'The Trials of Brother Jero', rating: 8, authorId: 1 },
+  { id: 1, title: 'The Trials of Brother Vaibhav', rating: 8, authorId: 1 },
   { id: 2, title: 'Half of a Yellow Sun', rating: 9, authorId: 3 },
   { id: 3, title: 'Americanah', rating: 9, authorId: 3 },
   { id: 4, title: 'King Baabu', rating: 9, authorId: 1 },
