@@ -13,6 +13,8 @@ const ModulesAPI = require('./datasources/modules');
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
+  playground: true,
   dataSources: () => ({
     headerAPI: new HeaderAPI(),
     modulesAPI: new ModulesAPI()
