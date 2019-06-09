@@ -13,14 +13,8 @@ const ModulesAPI = require('./datasources/modules');
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  //cache: new RedisCache( {host: 'redis-10740.c52.us-east-1-4.ec2.cloud.redislabs.com',
-    //                      port : 10740,
-      //                    password : '6aie2edJJs323FjpIjLU4gRD7O6kYWMA',
-        //                 connectTimeout : 10000
-          //               } ),
-    dataSources: () => ({
+  dataSources: () => ({
     headerAPI: new HeaderAPI(),
-  //  modulesAPI: new ModulesAPI(),
     modulesAPI: new ModulesAPI()
   }),
   //plugins: [ResponseCachePlugin]
