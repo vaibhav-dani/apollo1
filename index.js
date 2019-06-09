@@ -1,7 +1,7 @@
 const { ApolloServer, gql } = require('apollo-server');
-const { MemcachedCache } = require('apollo-server-cache-memcached');
-const { RedisCache } = require('apollo-server-cache-redis');
-const { ResponseCachePlugin } = require('apollo-server-plugin-response-cache');
+//const { MemcachedCache } = require('apollo-server-cache-memcached');
+//const { RedisCache } = require('apollo-server-cache-redis');
+//const { ResponseCachePlugin } = require('apollo-server-plugin-response-cache');
 
 
 const typeDefs = require('./schema');
