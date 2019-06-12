@@ -3,7 +3,7 @@ const { RESTDataSource } = require('apollo-datasource-rest');
 class ModulesAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseNodeURL = 'http://childrensplacestg.prod.acquia-sites.com/api/node';    
+    this.baseNodeURL = 'http://childrensplacestg.prod.acquia-sites.com/api';          
   }
 
 async getModuleD({ moduleId }) {    

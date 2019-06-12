@@ -3,11 +3,11 @@ const { RESTDataSource } = require('apollo-datasource-rest');
 class HeaderAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = 'http://childrensplacestg.prod.acquia-sites.com/api/content/navigation'; 
+    this.baseURL = 'http://childrensplacestg.prod.acquia-sites.com/api'; 
   }
 
 async getHeader() {
-  const response = await this.get('header/7518a373-1117-4199-a2bf-297108f6064e');
+  const response = await this.get('header');
     console.log(response);
     return this.headerReducer(response.data) ;    
 }
